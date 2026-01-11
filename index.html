@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Steve Web Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="fanta.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <a href="/"></a>
+      <nav>
+        <a target="_blank" href="https://github.com/SteveVanSteve"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+        <a
+          target="_blank"
+          href="https://www.linkedin.com/in/stephen-shields5/"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <div class="intro-header">
+          <h1>Hello! I'm Steve...</h1>
+          <p>Junior Software engineer and aspiring software developer</p>
+        </div>
+        <h5 class="intro-description">
+          <h2>A software developer by qualification, a junior software engineer by trade, and a creative "jack of all trades" by nature!</h2>
+          <h3>Born and bred in the scenic north of Ireland, I love listening to music, going to gigs, playing drums, film photography and volunteering to help others...</h3>
+          <h3>When I'm not doing that, I'm learning how to improve my software and tech skills, learn relevant useful concepts, and build innovative applications to help others.</h3>
+          <h4>Hopefully you like some of what I've already built. I've got more exciting stuff on the way, so watch this space...</h4>
+        </h5>
+        <div class="links-container">
+          <i class="fa-solid link-arrow fa-arrow-right"></i>
+          <a href="mailto:stevie.shields@hotmail.co.uk">Email me</a>
+          <a target="_blank" href="https://github.com/SteveVanSteve">My GitHub</a>
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/in/stephen-shields5/"
+            >My LinkedIn</a
+          >
+        </div>
+
+        <div id="play-game">
+          <button onclick="playGame()">Play game?</button>
+        </div>
+        <div style="display: none" class="color-div">
+          <h4>Pick a color</h4>
+          <p style="display: none">Great... now it's all messed up!</p>
+          <input
+            type="color"
+            id="color-picker"
+            onchange="changeColor()"
+            value="#0084ff"
+          />
+          <button style="display: none" onclick="resetColor()">Reset</button>
+        </div>
+      </section>
+
+      <section>
+        <h2>Skills</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Area</th>
+              <th>Technologies</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Languages & Frameworks</td>
+              <td>Java | C++ | Python | JavaScript | ReactJS | React Neactive | Vite | NodeJS | ChakraUI | TailwindCSS | FantaCSS | Django REST</td>
+            </tr>
+            <tr>
+              <td>Technologies</td>
+              <td>Docker | MySQL | PostgresSQL | CI/CD | GIT | Microsoft Azure | Data analysis | Data visualization</td>
+            </tr>
+            <tr>
+              <td>Other</td>
+              <td>
+                AGILE | JIRA | SCADA Engineering | Regression Testing | SDLC | Figma | Microsoft Paint
+              </td>
+            </tr>
+                        <tr>
+              <td>Education</td>
+              <td>
+                Master of Science, Software Development, University Of Strathclyde, 2022 | Bachelor of Arts (Honours), Film and Media, University Of Stirling, 2014
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section>
+        <h2>My Projects</h2>
+        <div class="cards-grid">
+          <div class="project-card">
+            <div>
+              <p>August 17th, 2025</p>
+              <h4>The Brogram</h4>
+              <div class="tech-list">
+                <div class="card-button-secondary">
+                  <p>ReactJS</p>
+                </div>
+                <div class="card-button-secondary">
+                  <p>FantaCSS</p>
+                </div>
+                <div class="card-button-secondary">
+                  <p>JavaScript</p>
+                </div>
+              </div>
+              <p>
+                This is the "Brogram" project. A simple workout app to follow that's accessible for anyone who wants to train and stay fit and healthy (not just for the "bros")!
+              </p>
+              <div class="project-links">
+                <a target="_blank" href="https://br0gram-plan.netlify.app/">Live</a>
+                <a target="_blank" href="https://github.com/SteveVanSteve/2_brogram">GitHub for Brogram</a>
+              </div>
+            </div>
+            <div class="img-div">
+              <img
+                class="big-img"
+                src="/1_web_portfolio/public/Brogram_screenshot_for_webportfolio_1.png"
+                alt="smol-james-thumbnail"
+              />
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div>
+              <p>August 26th, 2024</p>
+              <h4>Game-Hub</h4>
+              <div class="tech-list">
+                <div class="card-button-secondary">
+                  <p>Typescript</p>
+                </div>
+                <div class="card-button-secondary">
+                  <p>React18</p>
+                </div>
+                <div class="card-button-secondary">
+                  <p>Vite4</p>
+                </div>
+                <div class="card-button-secondary">
+                  <p>ChakraUI</p>
+                </div>
+              </div>
+              <p>
+                This is a "Game-Hub" project. A video game discovery web
+                app that helps you find fun, old, new, and interesting games
+                to play!
+              </p>
+              <div class="project-links">
+                <a target="_blank" href="https://game-hub-ten-murex.vercel.app/">Live</a>
+                <a target="_blank" href="https://github.com/SteveVanSteve/game-hub">GitHub for Game-Hub</a>
+              </div>
+            </div>
+            <div class="img-div">
+              <img
+                class="big-img"
+                src="/1_web_portfolio/public/Gamehub_screenshot_for_webportfolio.png"
+                alt="smol-james-thumbnail"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+              <p>
+              I'll continue to update this portfolio with my latest completed work, certifications and links to exciting new projects. Thanks!  
+              </p>
+
+    </main>
+    <footer>
+      <p>
+        By <a href="">Steve</a>
+
+<!-- </a> on <a target="_blank" href="https://github.com/SteveVanSteve/game-hub">GitHub -->
+
+      </p>
+    </footer>
+    <script>
+      // This is where the little interactive color switching game is going to be created
+
+      // 1. Select all the HTML elements so that later they can be manipulated
+      const body = document.querySelector("body");
+      const colorInput = document.getElementById("color-picker");
+      const colorDiv = document.querySelector(".color-div");
+      const hiddenText = document.querySelector(".color-div p");
+      const resetBtn = document.querySelector(".color-div button");
+      const playBtn = document.getElementById("play-game");
+
+      // 2. Create the functions
+      function playGame() {
+        colorDiv.style.display = " block";
+        playBtn.style.display = "none";
+      }
+
+      function changeColor() {
+        const selectedColor = colorInput.value;
+        body.style.background = selectedColor;
+        resetBtn.style.display = "block";
+        hiddenText.style.display = "block";
+        colorInput.style.display = "none";
+      }
+
+      function resetColor() {
+        body.style.background = "white";
+        colorInput.style.display = "block";
+        playBtn.style.display = "block";
+
+        hiddenText.style.display = "none";
+        resetBtn.style.display = "none";
+        colorDiv.style.display = "none";
+      }
+      // 3. Assign the functions to the buttons by adding the function calll to the actual elements (done above in the HTML code)
+    </script>
+  </body>
+</html>
