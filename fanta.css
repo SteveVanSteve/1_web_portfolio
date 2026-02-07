@@ -344,7 +344,7 @@ audio {
 audio,
 img,
 video {
-    border-radius: var(--border-radius-large);
+    border-radius: var(--border-radius-small);
     max-width: 100%;
 }
 
